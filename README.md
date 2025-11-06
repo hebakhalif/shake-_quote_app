@@ -1,16 +1,49 @@
-# shake_quote_app
+# 🤳 Shake to Get a Quote
 
-A new Flutter project.
+A Flutter app that displays **random motivational quotes** when you shake your phone — perfect for instant inspiration during study sessions! 🌟
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 📱 **Shake detection** using Android accelerometer  
+- 💬 **20+ motivational quotes in Arabic**  
+- 🎨 **Beautiful animations and modern UI**  
+- ⚡ **Real-time response** with smooth transitions  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| **Flutter** | UI and animations |
+| **Kotlin** | Native shake detection |
+| **EventChannel** | Flutter ↔ Android communication |
+| **SensorManager** | Accelerometer integration |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/shake-quote-app.git
+
+# Navigate into the project
+cd shake-quote-app
+
+# Install dependencies
+flutter pub get
+
+# Run the app
+flutter run
+
+ Project Structure
+
+lib/
+├── main.dart          # Flutter UI & EventChannel
+└── quotes_data.dart   # Quotes collection
+
+android/app/src/main/kotlin/
+└── MainActivity.kt    # Shake detection logic
